@@ -1,0 +1,9 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: i want to cerate a file in my nodes
+    file:
+      path: /home/ubuntu/textfile
+      state: touch
+      

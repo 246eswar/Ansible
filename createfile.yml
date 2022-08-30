@@ -1,6 +1,6 @@
 ---
  - name: 
-     file:
+   file:
        path: /home/ubuntu/textfile1
        state: touch
   

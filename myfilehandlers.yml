@@ -1,9 +1,18 @@
 ---
-- hosts: mywebservers
+- hosts: 172.31.28.76
   become: yes
   tasks:
-  - name: i want to cerate a file in my nodes
-    file:
-      path: /home/ubuntu/textfile
-      state: touch
-      
+  - include_tasks: createfile.yml
+  - name: install my webserver 
+    apt:
+      name: apache2
+      state: present
+  - name: start my webserver
+    service:
+      name: apache2
+      state: started 
+  - name: i want to copy index.j2 file in my nodes
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
+  

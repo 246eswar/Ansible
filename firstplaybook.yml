@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mywebservers
   become: yes
   tasks: 
   - name: i want install webserver on ubuntu node
@@ -20,3 +20,8 @@
     apt:
       name: wget
       state: present
+
+  - name: install httpd
+    yum:
+      name: httpd
+      state: present    

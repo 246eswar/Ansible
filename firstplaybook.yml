@@ -10,9 +10,8 @@
   - name: install git
     apt:
       name: git
-
       state: present
-  
+
   - name: install tree
     apt:
       name: tree

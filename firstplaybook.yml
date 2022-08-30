@@ -8,7 +8,7 @@
      state: present
     when: ansible_os_family=="Debian"
   - name: i want start whebser on my ubuntu node
-    sevice:
+    service:
      name: apache2
      state: restarted
     when: ansible_os_family=="Debian"
@@ -19,7 +19,7 @@
       state: present 
     when: ansible_os_family=="RedHat"   
   - name: i want start whebser on my RedHat node
-    sevice:
+    service:
      name: httpd
      state: started
     when: ansible_os_family=="RedHat"

@@ -24,4 +24,5 @@
   - name: install httpd
     yum:
       name: httpd
-      state: present    
+      state: present 
+    when: ansible_os_family == "RedHat"   

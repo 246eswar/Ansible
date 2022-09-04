@@ -3,14 +3,15 @@
   become: yes
   tasks:
   - name: create a ansible ubuntu node
-    key_name: Ansible_29-08-2022
-    instace_type: t2.micro
-    image: ami-0a06a8a97b7a6be71
-    wait: yes
-    region: us-east-2
-    count: 1
-    group: mygroup
-    vpc_subnet_id: subnet-0487d999a86b85e7a
-    assign_public_ip: yes
-    instance_tags:
-       Name: ansible_node
+    ec2:
+      key_name: Ansible_29-08-2022
+      instace_type: t2.micro
+      image: ami-0a06a8a97b7a6be71
+      wait: yes
+      region: us-east-2
+      count: 1
+      group: mygroup
+      vpc_subnet_id: subnet-0487d999a86b85e7a
+      assign_public_ip: yes
+      instance_tags:
+        Name: ansible_node

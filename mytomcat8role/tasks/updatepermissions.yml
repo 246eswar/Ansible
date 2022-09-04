@@ -1,0 +1,46 @@
+---
+- name: give the tomcat ownership
+  file:
+   path: /opt/tomcat
+   group: tomcat
+   recurse: yes
+   state: directory
+
+- name: give the tomcat group rear access to the conf
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    mode: g+r
+    recurse: yes
+
+- name: give the tomcat group execute access to the conf
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    mode: g+x
+- name: make the tomcat user the owner of webapps
+  file:
+    path: /opt/tomcat/webapps/
+    state: directory
+    recurse: yes
+    owner: tomcat
+- name: make the tomcat user the owner of work
+  file:
+    path: /opt/tomcat/work
+    state: directory
+    recurse: yes
+    owner: tomcat
+- name: make the tomcat user the owner of temp
+  file:
+    path: /opt/tomcat/temp
+    state: directory
+    recurse: yes
+    owner: tomcat
+- name: make the tomcat user the owner of logs
+  file:
+    path: /opt/tomcat/logs
+    state: directory
+    recurse: yes
+    owner: tomcat
+               
+    

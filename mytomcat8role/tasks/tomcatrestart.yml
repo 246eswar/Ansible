@@ -1,10 +1,10 @@
 ---
-- name: reload the systemd deamon 
+- name: reload the systemd daemon 
   systemd:
-   deamon_reload: yes
+   daemon_reload: yes
    name: tomcat
 
-- name: restart the systemd deamon
+- name: restart the systemd daemon
   systemd:
    name: tomcat
    state: started

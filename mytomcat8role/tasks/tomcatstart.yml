@@ -1,7 +1,7 @@
 ---
 - name: reload the systemd daemon
   systemd:
-    deamon_reload: yes
+    daemon_reload: yes
     name: tomcat
 
 - name: start the systemd daemon

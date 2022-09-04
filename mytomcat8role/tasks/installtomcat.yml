@@ -10,5 +10,5 @@
     state: directory    
  - name: extract tomcat tar file
    command:
-     cmd: tar xzvf apache-tomcat-*tar.gz -C /opt/tomcat --strip-components=1
+     cmd: sudo tar xzvf apache-tomcat-*tar.gz -C /opt/tomcat --strip-components=1
      creates: /opt/tomcat/LICENSE

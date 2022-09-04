@@ -1,2 +1,6 @@
 access_key = AKIAVXLJ4KC7F2ZK6MOL
 secret_key = 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
+
+[Credentials]
+aws_access_key_id = AKIAVXLJ4KC7F2ZK6MOL
+aws_secret-access_key = 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

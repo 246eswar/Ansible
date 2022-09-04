@@ -7,11 +7,11 @@
       key_name: Ansible_29-08-2022
       instance_type: t2.micro
       image: ami-0a06a8a97b7a6be71
-      wait: yes
-      region: us-east-2
+      wait: yes     
       count: 1
+      region: us-east-2
       group: mygroup
       vpc_subnet_id: subnet-0487d999a86b85e7a
       assign_public_ip: yes
       instance_tags:
-        Name: ansible_node
+        Name: ansiblenode

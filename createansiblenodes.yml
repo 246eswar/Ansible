@@ -4,7 +4,7 @@
   tasks:
    -  name: create a ansible ubuntu node
       ec2:
-       key_name: Ansible_29-08-2022
+       key_name: ansiblenew
        instance_type: t2.micro
        image: ami-0a06a8a97b7a6be71
        wait: yes     

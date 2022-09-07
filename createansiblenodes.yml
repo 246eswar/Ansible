@@ -6,12 +6,12 @@
       ec2:
        key_name: ansiblenew
        instance_type: t2.micro
-       image: ami-0a06a8a97b7a6be71
+       image: ami-07cb930d700ed1342
        wait: yes     
        count: 1
-       region: us-east-2
-       group: mygroup
-       vpc_subnet_id: subnet-04ddc0bbc08ac4421
+       region: us-east-1
+       group: ansible
+       vpc_subnet_id: subnet-0601d856276820f58
        assign_public_ip: yes
        instance_tags:
          Name: ansiblenode

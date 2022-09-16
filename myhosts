@@ -1,8 +1,8 @@
 [mywebservers]
-172.31.82.14
+172.31.31.166
 
 [myjavainstall]
-172.31.82.14
+172.31.31.166
 
 [applicationwebserver]
-172.31.82.14
+172.31.31.166

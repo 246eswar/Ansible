@@ -4,15 +4,14 @@
   tasks:
    -  name: create a ansible ubuntu node
       ec2:
-       key_name: ansiblenew
+       key_name: ansible16
        instance_type: t2.micro
-       image: ami-07cb930d700ed1342
+       image: ami-0a57745ac441f483b
        wait: yes     
        count: 1
-       region: us-east-1
-       group: ansible
-       vpc_subnet_id: subnet-0601d856276820f58
+       region: us-east-2
+       group: default
+       vpc_subnet_id: subnet-0948396a1ab39c95d
        assign_public_ip: yes
        instance_tags:
-         Name: ansiblenode
-      register: ec2
+         Name: ansiblenode      

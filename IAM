@@ -9,3 +9,7 @@ aws_secret-access_key = Q7YwmcVequCnGb/a3XA2uA2Uk5YqZCG5Y3IwL37B
 
 AKIAVXLJ4KC7AWZTGGP3
 PxV7E4glorOYjI75+FRh4wAa1n/hhR9W+PcX3xM9
+
+[Credentials]
+aws_access_key_id = AKIAWWZFWWZ35JDK3O4F
+aws_secret_access_key = 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
